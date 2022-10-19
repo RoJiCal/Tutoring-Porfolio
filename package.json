@@ -1,0 +1,31 @@
+{
+  "name": "19.10.2022-tutoring",
+  "version": "1.0.0",
+  "description": "tutoring porfolio",
+  "main": "index.js",
+  "scripts": {
+    
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "rm -rf dev-serve && parcel public/index.html --dist-dir dev-serve",
+      "build": "rm -rf build && parcel build src/index.html --dist-dir build --public-url ./",
+      "publish": "gh-pages -d build"
+    },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoJiCal/Tutoring-Porfolio.git"
+  },
+  "author": "Roberto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RoJiCal/Tutoring-Porfolio/issues"
+  },
+  "homepage": "https://github.com/RoJiCal/Tutoring-Porfolio#readme",
+  "dependencies": {
+    "sass":"^1.55.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.7.0",
+  }
+}
